@@ -1,0 +1,75 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #ffffff;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    background: url(/html/img/bottom.png) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+  // 头部
+  .con-hd{
+    img{
+      width: 100%;
+      border-radius: 100px 0;
+    }
+  }
+  .nav{
+    margin-top: -50px;
+    background: url(img/bottom.png);
+    .nav-1{
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      margin: 6rem auto;
+      a{
+        width: 40%;
+        height: 6rem;
+        font-size: 4.5vw;
+        text-align: center;
+        line-height: 6rem;
+        background-color: #e1ffca;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px #2c392e, -5px -5px 10px #d6f4dc;
+      }
+    }
+  }
+  // 底部
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 2.933333rem;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    padding-top: 0.3rem;
+    background-color: #02f664;
+    border-top: 1px solid #ccc;
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-top: 8px;
+      }
+    }
+    .home{
+      img{
+        width: 3.404rem;
+        height: 3.4093333rem;
+        margin-top: -20px;
+      }
+    }
+  }

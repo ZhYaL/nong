@@ -1,0 +1,247 @@
+@import "common.less";
+
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  overflow-x: hidden;
+  background: #eeeeee;
+  // height: 1500px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// 头部
+.top {
+  text-align: center;
+
+  /* 将搜索框容器中的内容居中对齐 */
+  img {
+    width: 100%;
+  }
+
+  .search {
+    padding: 0 auto;
+    background-image: url(../images/搜索.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    /* 增加右侧内边距，以便在图标右侧留出一些空白 */
+    background-size: contain;
+    /* 将背景图片缩放以适应父盒子的大小 */
+    height: 50px;
+    display: block;
+    /* 将输入框设置为块级元素，以便设置左右外边距 */
+    margin: 0 auto;
+    /* 将左右外边距设置为自动，即居中对齐 */
+    border-radius: 20px;
+    font-size: .75rem;
+  }
+}
+
+.nav {
+  margin: 10px 40px;
+
+  .nav-top {
+    margin-top: 15px;
+    display: block;
+
+    h4 {
+      float: left;
+      margin: 0;
+      // margin-left: 50px;
+      font-size: .9rem;
+      color: #f7861d;
+    }
+
+    p {
+      float: left;
+      margin: 0;
+      margin-left: 20px;
+      font-size: .7rem;
+      color: #000000;
+    }
+  }
+
+  .nav-navs {
+    margin: 0 5px;
+    height: 220px;
+    border-radius: 40px;
+    background-color: #ffffff;
+
+    li {
+      a {
+        float: left;
+        width: 20%;
+        height: 110px;
+        margin-top: 10px;
+        text-align: center;
+
+        img {
+          width: 55%;
+          display: inline-block;
+        }
+
+        p {
+          margin: 0 auto;
+          font-size: .45rem;
+          color: #464646;
+        }
+      }
+    }
+  }
+}
+
+// nav2
+.nav2 {
+  display: inline;
+
+  .top2 {
+    h4 {
+      margin-left: 30px;
+      font-size: .8rem;
+      color: #fd1616;
+    }
+  }
+
+  ul {
+    margin: 0 30px;
+
+    li {
+      display: flex;
+
+      a {
+        border-radius: 30px;
+        flex: 1;
+        margin-top: 10px;
+        text-align: center;
+        background-color: #ffffff;
+
+        p {
+          float: left;
+          font-size: .75rem;
+          color: #464646;
+        }
+
+        img {
+          // width: 50%;
+          height: 100%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+// .nav3
+.nav3{
+  // .swiper {
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  // padding:90px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+    height: 50px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  transition-property:all;
+  }
+#progressEffect{
+  width: 60px;
+  height: 20px;
+  position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 20px;
+    font-size: 10px;
+}
+}
+// bottom
+.bottom{
+  // justify-content: space-between;
+  // display: flex;
+  div{
+    display: flex;
+    justify-content: space-between;
+    // width: 80%;
+    margin: 30px 30px;
+    a{
+      width: 50%;
+      img{
+        width: 90%;
+        // height: 100%;
+      }
+      span{
+        margin: 0 auto;
+        p{
+          font-size: .8rem;
+          color: #464646;
+        }
+      }
+    }
+  }
+}
+.p{
+  text-align: center;
+  font-size: 18px;
+}
+// 底部
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 1.633333rem;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+  padding-top: 0.3rem;
+  background-color: #02f664;
+  border-top: 1px solid #ccc;
+
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-top: 6px;
+    }
+  }
+
+  .home {
+    img {
+      width: 2.404rem;
+      height: 2.4093333rem;
+      margin-top: -20px;
+    }
+  }
+}

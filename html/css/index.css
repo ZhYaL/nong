@@ -1,0 +1,204 @@
+/* 清除内、外间距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除a标签的下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 去除li标签的序列符号（小黑点） */
+li {
+    list-style: none;
+}
+
+body {
+    /* background-image: linear-gradient(to right, #3e9597, #214c52); */
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #ffffff;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+div {
+    box-sizing: border-box;
+  }
+.box {
+    /* 分布式布局 */
+    display: flex;
+    justify-content: center;
+}
+
+/* 登录、注册外div共同样式 */
+.login,
+.register {
+    width: 20rem;
+    height: 30.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: 1.25rem;
+}
+
+/* 登录、注册顶部div共同样式 */
+.login_top,
+.register_top {
+    width: 20rem;
+    height: 12rem;
+    color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+}
+
+.login_top {
+    background: #524321;
+}
+
+.register_top {
+    background: #3e9597;
+}
+
+.login_top img {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-top: 2rem;
+}
+
+.register_top {
+    padding-top: 2.5rem;
+    /* 添加内间距防止div扩充 */
+    box-sizing: border-box;
+}
+
+.register_top div {
+    width: 5.5rem;
+    height: 5.5rem;
+    background: white;
+    border-radius: 10rem;
+    color: silver;
+    font-size: 4rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 5.5rem;
+}
+
+.login_bottom,
+.register_bottom {
+    text-align: center;
+}
+
+/* 登录、注册表单共同样式 */
+.login_bottom .input,
+.register_bottom .input {
+    width: 17.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    padding-left: 0.6rem;
+    border-radius: 0.6rem;
+    border: 0.1rem solid silver;
+    /* 去除表单点击后出现的边框 */
+    outline: none;
+    color: #0b0a0b;
+}
+
+.login_bottom p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* 使复选框与后面文字水平对齐 */
+.login_bottom p input {
+    vertical-align: middle;
+    /* vertical 垂直的  middle 中间 */
+}
+
+.login_bottom p span {
+    margin-right: 0.5rem;
+    color: #757575;
+}
+
+.login_bottom p a {
+    color: #214c52;
+}
+
+.register_bottom p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.register_bottom p span {
+    margin-right: 0.5rem;
+    color: #757575;
+}
+
+.register_bottom p a {
+    color: #214c52;
+}
+
+/* 登录、注册按钮共同样式 */
+.login_bottom button,
+.register_bottom button {
+    width: 18rem;
+    height: 2.8rem;
+    color: white;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+    border: none;
+}
+/* .login_bottom input::after,
+.register_bottom input::after{
+    font-family: 'icomoon';
+    content: '\e9b0';
+} */
+.login_bottom button {
+    background: #214c52;
+    margin-top: 3.6rem;
+}
+
+.register_bottom button {
+    background: #3e9597;
+}
+
+/* 鼠标滑过按钮出现阴影效果 */
+.login_bottom button:hover,
+.register_bottom button:hover {
+    box-shadow: 0.3rem 0.3rem 0 rgba(24, 22, 22, 0.3);
+}
+.login_bottom button:active,
+.register_bottom button:active{
+    box-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(4px);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 2.933333rem;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    padding-top: 0.3rem;
+    background-color: #02f664;
+    border-top: 1px solid #ccc;
+  }
+  .footer .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .item img {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-top: 8px;
+  }
+  .footer .home img {
+    width: 3.404rem;
+    height: 3.4093333rem;
+    margin-top: -23px;
+  }
+  
